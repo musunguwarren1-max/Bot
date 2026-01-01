@@ -14,7 +14,7 @@ http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.write('Velocity OS: Cloud Engine Running 24/7');
     res.end();
-}).listen(process.env.PORT || 8080);
+}).listen(process.env.PORT || 8000);
 
 async function startVelocityBot() {
    const { state, saveCreds } = await useMultiFileAuthState("velocity_session");
